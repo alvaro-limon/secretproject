@@ -427,7 +427,9 @@ export default function Home() {
                 <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic', mb:2}}>
                   Lo único que tienes que hacer es mostrarlo a tu distribuidor más cercano.
                 </Typography>
-                <Map address="Ricardo Palma 3033"/>
+                <a href='https://goo.gl/maps/AZpDsmX5kMprss1A7'>
+                  <Map address="Ricardo Palma 3033"/>
+                </a>
               </Paper>
             </MyPopup>
           </Box>
