@@ -4,6 +4,8 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image'
 
+const prefix = '/secretproject'
+
 const AnimationFadeOut = ({complete}) => {
   return (
     <AnimatePresence>
@@ -23,7 +25,7 @@ const AnimationFadeOut = ({complete}) => {
         }}
         onAnimationComplete={complete}
       >
-        <Image src='/froggif.gif' width={50} height={50} alt=''/>
+        <Image src={prefix + '/froggif.gif'} width={50} height={50} alt=''/>
       </motion.div>
     </AnimatePresence>
   );

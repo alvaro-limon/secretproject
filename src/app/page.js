@@ -15,6 +15,8 @@ import MyMultQuestion from '@/components/multquestion'
 import Image from 'next/image'
 import Map from '@/components/map'
 
+const prefix = '/secretproject'
+
 export default function Home() {
 
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -407,7 +409,7 @@ export default function Home() {
               </Typography>
               <Paper elevation={3} sx={{width:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:3, mt:2, pt:3, pb:6, bgcolor:'white'}}>
                 <Box sx={{margin:3}}>
-                  <Image src='/froggif.gif' width={50} height={50} alt=''/>
+                  <Image src={prefix + '/froggif.gif'} width={50} height={50} alt=''/>
                 </Box>
                 
                 <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
