@@ -428,7 +428,9 @@ export default function Home() {
                 <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic', mb:2}}>
                   Lo único que tienes que hacer es mostrarlo a tu distribuidor más cercano.
                 </Typography>
-                <LocationOnIcon href='https://goo.gl/maps/AZpDsmX5kMprss1A7'/>
+                <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}} href='https://goo.gl/maps/AZpDsmX5kMprss1A7'> 
+                  <LocationOnIcon />
+                </Button>
               </Paper>
             </MyPopup>
           </Box>
