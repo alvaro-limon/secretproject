@@ -9,6 +9,7 @@ import { Box, Button, Container, List, Paper, ThemeProvider, Typography } from '
 import MyPopup from '@/components/popup'
 import AnimationFadeOut from '@/components/intro'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MyQuestion from '@/components/question'
 import MyMultQuestion from '@/components/multquestion'
 
@@ -427,7 +428,7 @@ export default function Home() {
                 <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic', mb:2}}>
                   Lo único que tienes que hacer es mostrarlo a tu distribuidor más cercano.
                 </Typography>
-                  <Map address="Ricardo Palma 3033" onClick={location.href='https://goo.gl/maps/AZpDsmX5kMprss1A7'}/>
+                <LocationOnIcon href='https://goo.gl/maps/AZpDsmX5kMprss1A7'/>
               </Paper>
             </MyPopup>
           </Box>
