@@ -141,7 +141,7 @@ export default function Home() {
               </Typography>
               <MyMultQuestion question='¿Cómo fue que nos conocimos?' ans1='option2' solved={handleSolvedQuestions} options={[
                 { value: 'option1', text: 'En una camioneta, camino a la obra' },
-                { value: 'option2', text: 'Me aceptaste invitarte una nieve' },
+                { value: 'option2', text: 'Me aceptaste una nieve, en la obra' },
                 { value: 'option3', text: 'Cenando, segundo día de misiones' }
               ]}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
@@ -164,7 +164,7 @@ export default function Home() {
               <MyMultQuestion question='¿A dónde fuimos?' ans1='option3' solved={handleSolvedQuestions} options={[
                 { value: 'option1', text: 'Una tienda de helado' },
                 { value: 'option2', text: 'Un partido de baseball' },
-                { value: 'option3', text: 'Casa de chei' }
+                { value: 'option3', text: 'A casa de chei' }
               ]}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                     () => {
@@ -228,7 +228,7 @@ export default function Home() {
                 Nada mal... ¡Sí te acuerdas! 
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                A decir verdad, yo tiendo a olvidar, pero hay ciertas cosas que no se olvidan...
+                Unas pocas más :{")"}
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                   () => {
@@ -427,9 +427,7 @@ export default function Home() {
                 <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic', mb:2}}>
                   Lo único que tienes que hacer es mostrarlo a tu distribuidor más cercano.
                 </Typography>
-                <a href='https://goo.gl/maps/AZpDsmX5kMprss1A7'>
-                  <Map address="Ricardo Palma 3033"/>
-                </a>
+                  <Map address="Ricardo Palma 3033" onClick={location.href='https://goo.gl/maps/AZpDsmX5kMprss1A7'}/>
               </Paper>
             </MyPopup>
           </Box>
