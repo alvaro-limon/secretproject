@@ -315,7 +315,7 @@ export default function Home() {
                 También aprendí que tienes un gran corazón,
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Y un talento innato para convivir con niños. {"(tal vez por ser de la edad ;))"}
+                Y un talento innato para convivir con niños. ¡Qué don!
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                   () => {
@@ -336,7 +336,7 @@ export default function Home() {
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 ¡Incluyendo la carrilla!
               </Typography>
-              <MyQuestion question='¿Qué es algo que te gusta? jajaja!' ans1='la velocidad' ans2='velocidad' solved={handleSolvedQuestions}>
+              <MyQuestion question='¿Qué es ese algo que te gusta? jajaja' ans1='la velocidad' ans2='velocidad' solved={handleSolvedQuestions}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                     () => {
                       document.getElementById('section_17').scrollIntoView({ behavior:'smooth',block:'start'});
@@ -353,6 +353,9 @@ export default function Home() {
             <MyPopup>
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
                 ...y que llevas alegría a donde vayas.
+              </Typography>
+              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
+                Como a mi vida :{")"}
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                   () => {
@@ -384,11 +387,11 @@ export default function Home() {
           <Box id='section_19' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
-                Pero no es una pregunta.
+                Pero no es una pregunta. Es un gracias.
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Solamente es un gracias. Gracias por haberte dado a conocer, por acompañarme, por convivir con las personas que aprecio,
-                ver películas raras conmigo, y tolerar todos los chistes de humor negro {"(buenísimos)"}. 
+                Gracias por haberte dado a conocer, por acompañarme, por convivir con las personas que aprecio,
+                ver películas raras conmigo, y por tolerar tantos malos chistes {"(buenísimos)"}. 
                 ¡Te quiero mucho!
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
