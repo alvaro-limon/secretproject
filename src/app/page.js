@@ -413,14 +413,6 @@ export default function Home() {
                 han sido sencillos, pero, independientemente, cada vez que he tenido el privilegio de convivir contigo
                 he conocido más de tu personalidad, que sinceramente encuentro bellísima.
               </Typography>
-              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Me emociona pensar que tenemos mucho que vivir por delante, pero más que nada, me emociona
-                pensar que te conoceré más profundamente, como tu a mí también, y que aprenderé a quererte cada día más,
-                si me lo permites...
-              </Typography>
-              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Espero te haya gustado esta pequeña sorpresa, ¡pero todavía queda el final!
-              </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                   () => {
                     document.getElementById('section_21').scrollIntoView({ behavior:'smooth',block:'start'})
@@ -434,6 +426,28 @@ export default function Home() {
           {/* section */}
           {solvedQuestions >= 9 && (
           <Box id='section_21' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <MyPopup>
+              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
+                Me emociona pensar en que tenemos mucho que vivir por delante, pero más que nada, me emociona
+                pensar que te conoceré más profundamente, como tu a mí también, y que aprenderé a quererte cada día más,
+                si me lo permites...
+              </Typography>
+              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
+                Espero te haya gustado esta pequeña sorpresa, ¡vamos al final!
+              </Typography>
+              <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
+                  () => {
+                    document.getElementById('section_22').scrollIntoView({ behavior:'smooth',block:'start'})
+                    handleSolvedQuestions()
+                  }
+              }><ArrowDownwardIcon/></Button>
+            </MyPopup>
+          </Box>
+          )}
+
+          {/* section */}
+          {solvedQuestions >= 9 && (
+          <Box id='section_22' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
                 Ahora si, ¡sorpresa!
