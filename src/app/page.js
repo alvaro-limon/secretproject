@@ -184,7 +184,7 @@ export default function Home() {
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
                 En uno de nuestros primeros planes, decidimos a ir a un partido de baseball...
               </Typography>
-              <MyMultQuestion question='¿A dónde fuimos?' ans1='option3' solved={handleSolvedQuestions} options={[
+              <MyMultQuestion question='¿A dónde terminamos yendo?' ans1='option3' solved={handleSolvedQuestions} options={[
                 { value: 'option1', text: 'A ver a los mariachis de Jalisco' },
                 { value: 'option2', text: 'A casa del Chei' },
                 { value: 'option3', text: 'Al estadio, a ver al Canelo' }
@@ -207,7 +207,7 @@ export default function Home() {
                 Los betos y yo decidimos ir a una expo de cerveza. Decidí llevarte algo de vuelta.
               </Typography>
               <MyMultQuestion question='¿Qué fué lo que te llevé?' ans1='option1' solved={handleSolvedQuestions} options={[
-                { value: 'option1', text: 'Hidromiel con frutos rojos y una cerveza' },
+                { value: 'option1', text: 'Hidromiel con frutos rojos, y una cerveza' },
                 { value: 'option2', text: 'Una cerveza IPA y una botella de hidromiel' },
                 { value: 'option3', text: 'Solamente unos stickers' }
               ]}>
@@ -245,7 +245,7 @@ export default function Home() {
           <Box id='section_12' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
-                Conociendote, he notado varias cualidades especiales de tí,
+                Conociendote, he notado varias cualidades especiales de ti,
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 Como tus intereses de lectura :{")"}.
@@ -391,7 +391,7 @@ export default function Home() {
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 Gracias por haberte dado a conocer, por acompañarme, por convivir con las personas que aprecio,
-                ver películas raras conmigo, y por tolerar tantos malos chistes {"(buenísimos)"}. 
+                por ver películas raras conmigo, y por tolerar tantos malos chistes {"(buenísimos)"}. 
                 ¡Te quiero mucho!
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
@@ -407,6 +407,33 @@ export default function Home() {
           {/* section */}
           {solvedQuestions >= 9 && (
           <Box id='section_20' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <MyPopup>
+              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
+                El propósito de esta pequeña dinámica era hacerte recordar algunos momentos que hemos vivido juntos. Algunos
+                han sido sencillos, pero, independientemente, cada vez que he tenido el privilegio de convivir contigo
+                he conocido más de tu personalidad, que sinceramente encuentro bellísima.
+              </Typography>
+              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
+                Me emociona pensar que tenemos mucho que vivir por delante, pero más que nada, me emociona
+                pensar que te conoceré más profundamente, como tu a mí también, y que aprenderé a quererte cada día más,
+                si me lo permites...
+              </Typography>
+              <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
+                Espero te haya gustado esta pequeña sorpresa, ¡pero todavía queda el final!
+              </Typography>
+              <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
+                  () => {
+                    document.getElementById('section_21').scrollIntoView({ behavior:'smooth',block:'start'})
+                    handleSolvedQuestions()
+                  }
+              }><ArrowDownwardIcon/></Button>
+            </MyPopup>
+          </Box>
+          )}
+
+          {/* section */}
+          {solvedQuestions >= 9 && (
+          <Box id='section_21' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
                 Ahora si, ¡sorpresa!
