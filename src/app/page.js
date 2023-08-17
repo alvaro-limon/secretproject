@@ -248,7 +248,7 @@ export default function Home() {
                 Conociendote, he notado varias cualidades especiales de ti,
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Como tus intereses de lectura :{")"}.
+                Como tus intereses de lectura...
               </Typography>
               <MyQuestion question='¿Acerca de qué te gustaba leer?' ans1='jack' ans2='psicopatas' solved={handleSolvedQuestions}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
@@ -334,7 +334,7 @@ export default function Home() {
                 Que tienes la capacidad de ver las cosas con humor...
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                ¡Incluyendo la carrilla!
+                ¡Hasta carrilla!
               </Typography>
               <MyQuestion question='¿Qué es ese algo que te gusta? jajaja' ans1='la velocidad' ans2='velocidad' solved={handleSolvedQuestions}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
@@ -391,7 +391,7 @@ export default function Home() {
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 Gracias por haberte dado a conocer, por acompañarme, por convivir con las personas que aprecio,
-                por ver películas raras conmigo, y por tolerar tantos malos chistes {"(buenísimos)"}. 
+                por ver películas raras conmigo, y por tanto tolerar malos chistes {"(buenísimos)"}. 
                 ¡Te quiero mucho!
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
@@ -410,8 +410,7 @@ export default function Home() {
             <MyPopup>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 El propósito de esta pequeña dinámica era hacerte recordar algunos momentos que hemos vivido juntos. Algunos
-                han sido sencillos, pero, independientemente, cada vez que he tenido el privilegio de convivir contigo
-                he conocido más de tu personalidad, que sinceramente encuentro bellísima.
+                han sido sencillos, pero, independientemente, cada uno me ha permitido conocer más de tu personalidad, que sinceramente encuentro bellísima.
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                   () => {
@@ -428,12 +427,12 @@ export default function Home() {
           <Box id='section_21' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Me emociona pensar en que tenemos mucho que vivir por delante, pero más que nada, me emociona
+                Me emociona pensar en que tenemos mucho que vivir juntos, pero más que nada, me emociona
                 pensar que te conoceré más profundamente, como tu a mí también, y que aprenderé a quererte cada día más,
                 si me lo permites...
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Espero te haya gustado esta pequeña sorpresa, ¡vamos al final!
+                Espero te haya gustado tu sorpresa. ¡Vamos al final!
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                   () => {
@@ -449,9 +448,6 @@ export default function Home() {
           {solvedQuestions >= 9 && (
           <Box id='section_22' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
-              <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
-                Ahora si, ¡sorpresa!
-              </Typography>
               <Paper elevation={3} sx={{width:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:3, mt:2, pt:3, pb:6, bgcolor:'white'}}>
                 <Box sx={{margin:3}}>
                   <Image src={prefix + '/froggif.gif'} width={50} height={50} alt=''/>
