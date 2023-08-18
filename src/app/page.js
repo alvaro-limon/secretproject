@@ -88,7 +88,7 @@ export default function Home() {
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
                 Una dinámica simple: Tú respondes una pregunta correctamente...
               </Typography>
-              <MyQuestion question='Ej. ¿Cual es el nombre de mi perro? (cualquiera)' ans1='jack' ans2='toby' solved={handleSolvedQuestions}>
+              <MyQuestion question='Ej. ¿Cuál es el nombre de mi perro? (cualquiera)' ans1='jack' ans2='toby' solved={handleSolvedQuestions}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                     () => {
                       document.getElementById('section_5').scrollIntoView({ behavior:'smooth',block:'start'});
@@ -142,7 +142,7 @@ export default function Home() {
               </Typography>
               <MyMultQuestion question='¿Cómo fue que nos conocimos?' ans1='option2' solved={handleSolvedQuestions} options={[
                 { value: 'option1', text: 'En una camioneta, camino a la obra' },
-                { value: 'option2', text: 'Me aceptaste una nieve, en la obra' },
+                { value: 'option2', text: 'Me dejaste comprarte una nieve' },
                 { value: 'option3', text: 'Cenando, segundo día de misiones' }
               ]}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
@@ -207,7 +207,7 @@ export default function Home() {
                 Los betos y yo decidimos ir a una expo de cerveza. Decidí llevarte algo de vuelta.
               </Typography>
               <MyMultQuestion question='¿Qué fué lo que te llevé?' ans1='option1' solved={handleSolvedQuestions} options={[
-                { value: 'option1', text: 'Hidromiel con frutos rojos, y una cerveza' },
+                { value: 'option1', text: '"Hidromiel" de frutos rojos, y una cerveza' },
                 { value: 'option2', text: 'Una cerveza IPA y una botella de hidromiel' },
                 { value: 'option3', text: 'Solamente unos stickers' }
               ]}>
@@ -352,7 +352,7 @@ export default function Home() {
           <Box id='section_17' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
               <Typography variant='h5' sx={{textAlign:'center', color:'text.primary'}}>
-                ...y que llevas alegría a donde vayas.
+                ...y que llevas alegría a donde vas.
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 Como a mi vida :{")"}
@@ -390,7 +390,7 @@ export default function Home() {
                 Pero no es una pregunta. Es un gracias.
               </Typography>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Gracias por haberte dado a conocer, por acompañarme, por convivir con las personas que aprecio,
+                Gracias por haberte dado a conocer. Por acompañarme, por convivir con las personas que aprecio,
                 por ver películas raras conmigo, y por tanto tolerar malos chistes {"(buenísimos)"}. 
                 ¡Te quiero mucho!
               </Typography>
@@ -410,7 +410,7 @@ export default function Home() {
             <MyPopup>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 El propósito de esta pequeña dinámica era hacerte recordar algunos momentos que hemos vivido juntos. Algunos
-                han sido sencillos, pero, independientemente, cada uno me ha permitido conocer más de tu personalidad, que sinceramente encuentro bellísima.
+                han sido sencillos, pero, independientemente, cada uno me ha permitido conocer más de tu personalidad, que, sinceramente, encuentro bellísima.
               </Typography>
               <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                   () => {
@@ -427,7 +427,7 @@ export default function Home() {
           <Box id='section_21' sx={{height:'100vh', width:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
             <MyPopup>
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
-                Me emociona pensar en que tenemos mucho que vivir juntos, pero más que nada, me emociona
+                Me emociona pensar en que tenemos mucho por vivir juntos, pero más que nada, me emociona
                 pensar que te conoceré más profundamente, como tu a mí también, y que aprenderé a quererte cada día más,
                 si me lo permites...
               </Typography>
