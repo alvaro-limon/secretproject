@@ -250,7 +250,7 @@ export default function Home() {
               <Typography variant='h6' sx={{textAlign:'center', color:'text.secondary', fontStyle:'italic'}}>
                 Como tus intereses de lectura...
               </Typography>
-              <MyQuestion question='¿Acerca de qué te gustaba leer?' ans1='jack' ans2='psicopatas' solved={handleSolvedQuestions}>
+              <MyQuestion question='¿Acerca de qué te gustaba leer?' ans1='jack' ans2='psicópatas' solved={handleSolvedQuestions}>
                 <Button variant='contained'sx={{fontWeight:'bold', color:'text.primary', mt:3}}  id='btn_s2' onClick={
                     () => {
                       document.getElementById('section_13').scrollIntoView({ behavior:'smooth',block:'start'});
